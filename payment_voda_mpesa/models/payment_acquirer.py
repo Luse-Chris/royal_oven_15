@@ -46,7 +46,7 @@ class PaymentAcquirerMpesa(models.Model):
         self.ensure_one()
         if self.provider != 'mpesa':
             return super()._get_default_payment_method_id()
-        return self.env.ref('payment_mpesa.payment_method_mpesa').id
+        return self.env.ref('payment_voda_mpesa.payment_method_mpesa').id
     def _mpesa_get_api_url(self):
         """ Return the API URL according to the acquirer state.
 
