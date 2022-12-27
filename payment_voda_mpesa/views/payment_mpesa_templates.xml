@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="inline_form">
+                <div>
+                    <input type="tel" name="mpesa_number" t-attf-id="o_mpesa_number_{{acquirer_id}}" class="form-control" placeholder="Mpesa number" required="true" pattern="^(0|255)[0-9]{9}$" title="2557xxxxxxxx 0r 07xxxxxxxx" />
+                    <div class="mt-4">
+                        After you click pay button, you will receive a payment confirmation dialog from Vodacom M-Pesa to process your  payment
+                    </div>
+                    <div class="card_placeholder"></div>
+                </div> 
+         
+         </template>
+
+</odoo>
